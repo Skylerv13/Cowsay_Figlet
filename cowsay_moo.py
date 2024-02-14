@@ -9,7 +9,7 @@ def main():
         x = input("Input: ")
         y = random.choice(figlet.getFonts())
         figlet.setFont(font = y)
-        sys.stdout = open('/workspaces/147750595/cs50_python/week_4_class/cow.txt', 'w')
+        sys.stdout = open('YOUR FILE PATH HERE', 'w')
         cowsay.cow(f"{figlet.renderText(x)}")
         sys.stdout.close()
     if len(sys.argv) >= 2 and sys.argv[1] in ["-f","-font"] and sys.argv[2] in figlet.getFonts():
