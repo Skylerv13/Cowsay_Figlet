@@ -16,7 +16,7 @@ def main():
         #w = open("cow.txt", "w")
         a = input("Input: ")
         figlet.setFont(font = sys.argv[2])
-        sys.stdout = open('/workspaces/147750595/cs50_python/week_4_class/cow.txt', 'w')
+        sys.stdout = open('YOUR FILE PATH HERE, 'w')
         cowsay.cow(f"{figlet.renderText(a)}")
         sys.stdout.close()
     else: sys.exit("Invalid Usage")
